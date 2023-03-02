@@ -117,12 +117,10 @@ def reset_books_table
   connection.exec(seed_sql)
 end
 
-describe StudentRepository do
+describe BooksRepository do
   before(:each) do 
     reset_books_table
   end
-
-  # (your tests will go here).
 end
 8. Test-drive and implement the Repository class behaviour
 After each test you write, follow the test-driving process of red, green, refactor to implement the behaviour.
