@@ -10,7 +10,7 @@ class BooksRepository
     result_set.each do |record|
       book = Book.new
 
-      book.id = record['id']
+      book.id = record['id'].to_i
       book.title = record['title']
       book.author_name = record['author_name']
 

@@ -20,7 +20,7 @@ describe BooksRepository do
   
     books = repo.all
     
-    expect(books.first.id).to eq ('1')
+    expect(books.first.id).to eq (1)
     expect(books.first.title).to eq('Nineteen Eighty-Four')
     expect(books.first.author_name).to eq('George Orwell')
   end
